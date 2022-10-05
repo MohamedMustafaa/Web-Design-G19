@@ -1,0 +1,1 @@
+cdnjs.com   // for all plugins
