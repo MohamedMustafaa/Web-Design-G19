@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.container h1{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 70px;    
+}
+
+.contactForm form{
+    width: 40%;
+}
+.contactForm form input{
+    padding: 10px;
+    width: 80%;
+    display: inline-block;
+    height: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 0;
+    color: grey;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.contactForm #company{
+    width: 40%;
+    margin-right: 20px;
+    background-color: white;
+    color: grey;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.contactForm #phone{
+    width: 31%;
+    background-color: white;
+    color: grey;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.contactForm form textarea{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    height: 70px;
+    display: inline-block;
+    background-color: white;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.contactForm form button{
+    margin-left: 215px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: yellow;
+    border-radius: 5px;
+    border: 0;
+    width: 40%;
+}
+.contactForm button h4{
+    color: grey;
+    background-color: yellow;
+    font-size: large;
+}
+.rightcontent{
+    /* display: inline-block; */
+    width: 40%;
+    vertical-align: top;
+    margin-left: 550px;
+    margin-top: -350px;
+    padding: 50px;
+}
+.rightcontent h2{
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 35px;
+}
+.rightcontent h5{
+    text-align: left; 
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-left: 55px;
+    font-size: 20px;
+}
+.rightcontent h5 span{
+    color: yellow;
+    display: inline-block;
+}
+.rightcontent ul{
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    padding-left: 75px;
+    font-size: 20px;
+}
