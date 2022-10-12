@@ -1,0 +1,49 @@
+.card{
+    border: 2px solid black;
+    width: 50%;
+    height: 100%;
+    box-shadow: -5px 5px orange;
+    margin-left: 25%;
+    margin-top: 10%;
+    position: relative;
+    overflow: hidden;
+}
+.card .right-arrow i{
+    right: 0;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+   
+}
+.card::before{
+    content: '';
+    background-color: blue;
+    border-bottom-left-radius: 23px;
+    transition: 1s ease-in-out;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+}
+.card:hover::before{
+  transform: scale(100,100);
+}
+.card p{
+    margin: 20px;
+    height: 50px;
+}
+
+.icon i{
+    animation: spin 2s linear infinite;
+    font-size: 100px;
+    margin-left: 45%;
+    margin-top: 2%;
+}
+@keyframes spin {
+    0%{transform:  rotate(0deg);}
+    25%{transform:  rotate(90deg);}
+    50%{transform:  rotate(180deg);}
+    75%{transform:  rotate(270deg);}
+    100%{transform: rotate(360deg);}
+}
