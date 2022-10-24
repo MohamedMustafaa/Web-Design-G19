@@ -436,3 +436,18 @@ a {
     transition-duration: 500ms;
 }
 /* End footer */
+
+/* Second page */
+/* start Get in touch */
+.form-control{
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+    padding-left: 0;
+    box-shadow: none !important;
+}
+hr{
+    margin: 0 !important;
+}
