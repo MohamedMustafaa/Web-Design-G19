@@ -25,12 +25,28 @@ a {
 .head-top-contact li:first-child{
     border-right: 2px solid #fff;
 }
-.dropdown:hover .dropdown-menu{
+.dropdown-toggle {
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu {
     display: block;
+    visibility: hidden;
+    transform: translateX(-20px);
+    transition: all 0.3s linear;
+    opacity: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    /* display: block; */
     margin: 0;
     border-top: 2px solid blue;
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
 }
-.dropdown:hover .dropdown-menu li:not(:last-child){
+
+.dropdown:hover .dropdown-menu li:not(:last-child) {
     border-bottom: 2px solid lightgray;
 }
 .carousel-indicators{
@@ -98,6 +114,7 @@ a {
 .details-box {
     position: absolute;
     max-width: 340px;
+    left: 110px;
     top: 17px;
     background-color: #fff;
     padding: 5px 20px;
@@ -435,6 +452,14 @@ a {
     line-height: 46px;
     transition-duration: 500ms;
 }
+.posts img{
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+.posts img:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
 /* End footer */
 
 /* Second page */
@@ -448,6 +473,63 @@ a {
     padding-left: 0;
     box-shadow: none !important;
 }
-hr{
+
+/* #title-hr{
     margin: 0 !important;
+} */
+
+@media (max-width: 767.98px) {
+    .head-top {
+        display: none;
+    }
+    .about-us .image img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-us .details-box {
+        position: relative;
+        max-width: none;
+        margin-bottom: 45px;
+        left: 0;
+    }
+    .meet-our-clients .left-img img {
+        display: none;
+    }
+    
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .head-top{
+        display: none;
+    }
+    .about-us .image img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-us .details-box{
+        position: relative;
+        max-width: none;
+        margin-bottom: 45px;
+        left: 0;
+    }
+    .subscribe h5{
+        font-size: 15px !important;
+        width: 50%;
+    }
+    .subscribe input{
+        font-size: 12px !important;
+        width: 100% !important;
+    }
+    .subscribe .btn-price-card{
+        font-size: 12px !important;
+        width: 100% !important;
+    }
+    .meet-our-clients .left-img img{
+        display: none;
+    }
+    .talk-us .btn-price-card{
+        height: 0px !important;
+        padding-bottom: 40px;
+    }
 }
