@@ -441,7 +441,7 @@ a {
 #scrollUp {
     background-color: #0c65ed;
     position: fixed;
-    display: block;
+    display: none;
     border-radius: 50%;
     bottom: 60px;
     right: 60px;
