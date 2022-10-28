@@ -597,7 +597,7 @@ nav a{
 .ninth-part {
     padding-top: 80px;
     padding-bottom: 50px;
-    background-image: url(/img/news.jpg);
+    background-image: url(../img/news.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
