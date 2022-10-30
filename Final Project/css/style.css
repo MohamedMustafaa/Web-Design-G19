@@ -331,6 +331,9 @@ a {
     left: 40%;
     bottom: 45%;
 }
+.testmon-body h5::after{
+    display: none;
+}
 #shadow-card{
     box-shadow: 0px 0px 50px 0px rgb(67 67 67 / 25%);
 }
@@ -496,7 +499,7 @@ a {
     .meet-our-clients .left-img img {
         display: none;
     }
-    
+
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -532,4 +535,81 @@ a {
         height: 0px !important;
         padding-bottom: 40px;
     }
+}
+
+/* About page */
+
+.about-part-text p{
+    font-size: 20px;
+    width: 75%;
+}
+
+.chart .percentage-one{
+    border-radius: 200px;
+    border: 1px solid #0c65ed;
+    position: absolute;
+    background: #fff;
+    height: 80px;
+    width: 80px;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 20%);
+    transform: translate(-50%, -50%);
+    left: 17%;
+    top: 44%;
+}
+
+
+
+.owl-prev,
+.owl-next {
+    background-color: #0c65ed !important;
+    color: #fff !important;
+    width: 40px !important;
+}
+
+.owl-prev {
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+.owl-next {
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+
+/* about-page-hover */
+
+.aboutTeam-bottom {
+    z-index: 2;
+}
+
+.aboutTeam-social {
+    transform: translateY(-50px);
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.about-card:hover .aboutTeam-social {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+.aboutTeam-social i:hover {
+    color: #000;
+}
+
+.about-card::after {
+    background-color: #0c65ed;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 0;
+    width: 75%;
+    border-radius: 5px;
+    bottom: 10%;
+    left: 13%;
+    transition: all 0.5s linear;
+}
+
+.about-card:hover::after {
+    height: 70%;
 }
