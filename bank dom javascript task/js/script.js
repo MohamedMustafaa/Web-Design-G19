@@ -10,19 +10,23 @@ function addUser(clientName, clientId, clientBalance){
     }
     users.push(user)
     console.table(users)
+    localStorage.setItem("usersList", JSON.stringify(users));
 }
 function editUserBalance(i){
     let newBalance = prompt("Enter new balance")
     users[i].balance = newBalance
+    localStorage.setItem("usersList", JSON.stringify(users));
     showUser()
     console.table(users)
 }
 function removeUser(index){
     users.splice(index , 1)
+    localStorage.setItem("usersList", JSON.stringify(users));
     showUser()
 }
 function showUser() {
     table.innerHTML = ""
+    users = JSON.parse(localStorage.getItem("usersList"));
     users.forEach((item, i, arr)=>{
         var table= document.getElementById('myTable')
         var row= document.createElement("tr")
@@ -63,3 +67,10 @@ form.addEventListener("submit", function(e){
     addUser(e.target.elements.clientName.value, e.target.elements.clientId.value, e.target.elements.clientBalance.value)
     showUser()
 })
+
+// localStorage.setItem("users", users);
+console.log(localStorage.getItem("users"));
+// let str = JSON.stringify(users)
+// localStorage.setItem("usersList",JSON.stringify(users))
+
+showUser()
